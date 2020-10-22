@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Square grass;
+    private Person person;
     
 
     /**
@@ -76,6 +77,17 @@ public class Picture
     {
 
         sun.slowMoveVertical(150);
+        
+        person = new Person();
+        person.changeColor("black");
+        person.makeVisible();
+        person.moveVertical(10);
+        person.moveHorizontal(-250);
+        person.slowMoveHorizontal(180);
+        
+        
+        
+        
         
     }
     
